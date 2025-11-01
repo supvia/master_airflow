@@ -1,5 +1,5 @@
-from airflow.sdk import DAG
 from airflow.providers.standard.operators.python import PythonOperator
+from airflow.sdk import DAG
 
 from common.common_func import get_sftp
 
