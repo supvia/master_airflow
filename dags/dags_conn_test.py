@@ -8,6 +8,7 @@ with DAG(
     dag_id="dags_conn_test",
     schedule=None,
     start_date=pendulum.datetime(2025, 10, 26, tz="Asia/Seoul"),
+    tags=["inflearn"], 
     catchup=False
 ) as dag:
     t1 = EmptyOperator(

@@ -6,7 +6,8 @@ from airflow.sdk import DAG
 with DAG(
     dag_id="dags_bash_select_fruit",
     schedule="10 0 * * 6#1",
-    start_Date = pendulum.datetime(2025, 11, 1, tz="Asia/Seoul"),
+    start_date = pendulum.datetime(2025, 11, 1, tz="Asia/Seoul"),
+    tags=["inflearn"], 
     catchup=False,
 ) as dag:
     t1_orange = BashOperator(
