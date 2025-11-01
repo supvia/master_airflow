@@ -4,7 +4,7 @@ from airflow.providers.standard.operators.python import PythonOperator
 from common.common_func import get_sftp
 
 with DAG(
-    dag_id="dags_python_import_func",
+    dag_id="python_import_func",
     tags=["inflearn"]
 ):
     task_get_sftp = PythonOperator(

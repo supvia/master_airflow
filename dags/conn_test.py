@@ -5,7 +5,7 @@ from airflow.providers.standard.operators.empty import EmptyOperator
 from airflow.sdk import DAG
 
 with DAG(
-    dag_id="dags_conn_test",
+    dag_id="conn_test",
     schedule=None,
     start_date=pendulum.datetime(2025, 10, 26, tz="Asia/Seoul"),
     tags=["inflearn"], 

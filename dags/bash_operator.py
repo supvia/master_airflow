@@ -7,7 +7,7 @@ from airflow.providers.standard.operators.bash import BashOperator
 
 
 with DAG(
-    dag_id="dags_bash_operator",
+    dag_id="bash_operator",
     schedule="0 0 * * *",  # Midnight every day. Cron schedule expression.
     start_date=pendulum.datetime(2025, 10, 1, tz="Asia/Seoul"),  # Remember to set your timezone(e.g., Asia/Seoul, UTC).
     catchup=False,  # Do not perform backfill. NOTE: If this field is true, it doesn't run parallelly.
